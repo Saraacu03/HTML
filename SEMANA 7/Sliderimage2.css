@@ -1,0 +1,94 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+    background-color: rgb(128, 88, 221);
+    
+    text-align:center;
+    
+    }
+    
+    h1,h3{
+    
+    color: white;
+    
+    }
+    .flip-container {
+
+        background-color: rgb(240, 92, 203);
+        
+        width: 100%;
+        
+        height: 100%;
+        
+        perspective: 1000px;
+        
+        margin: auto;
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        max-width: 1600px;
+
+        flex-wrap: wrap;
+
+}
+.flip-box-full {
+
+    position: relative;
+    
+    width: 280px;
+    
+    height: 280px;
+    
+    transition: all 0.8s;
+    
+    transform-style: preserve-3d;
+    
+    margin-right: 40px;
+    
+    border: 3px solid rgb(0, 0, 0);
+    
+    }
+    
+    .flip-box-full:hover {
+    
+    transform: rotateY(180deg);
+    
+    }
+    
+    .flip-box-img, .flip-box-text {
+    
+    position: absolute;
+    
+    width: 100%;
+    
+    height: 100%;
+    
+    overflow: hidden;
+    
+    backface-visibility: hidden;
+    
+    object-fit: contain;
+    
+    }
+    
+    .flip-box-img {
+    
+    background-color: rgb(255, 255, 255);
+    
+    color: black;
+    
+    }
+    
+    .flip-box-text {
+    
+    background-color: rgb(153, 50, 156);
+    
+    color: white;
+    
+    transform: rotateY(180deg);
+    
+    }
